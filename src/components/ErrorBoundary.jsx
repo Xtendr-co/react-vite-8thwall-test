@@ -35,7 +35,7 @@ class ErrorBoundary extends React.Component {
             <pre style={{ fontSize: '12px', overflow: 'auto' }}>
               {this.state.error && this.state.error.toString()}
               <br />
-              {this.state.errorInfo.componentStack}
+              {this.state.errorInfo && this.state.errorInfo.componentStack}
             </pre>
           </details>
           <button
